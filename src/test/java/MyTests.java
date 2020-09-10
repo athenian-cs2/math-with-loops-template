@@ -7,40 +7,27 @@ import java.io.PrintStream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MyTests {
-
     @Test
-    public void testCountABC() {
-        assertEquals(3, MyMain.countABC("aaa"), "The string \"aaa\" should contain the following number of a's, b's, or c's: 3");
-        assertEquals(3, MyMain.countABC("bbb"), "The string \"bbb\" should contain the following number of a's, b's, or c's: 3");
-        assertEquals(3, MyMain.countABC("ccc"), "The string \"ccc\" should contain the following number of a's, b's, or c's: 3");
-        assertEquals(3, MyMain.countABC("abc"), "The string \"abc\" should contain the following number of a's, b's, or c's: 3");
-        assertEquals(3, MyMain.countABC("abc"), "The string \"cab\" should contain the following number of a's, b's, or c's: 3");
-        assertEquals(0, MyMain.countABC("xyz"), "The string \"xyz\" should contain the following number of a's, b's, or c's: 0");
-        assertEquals(4, MyMain.countABC("racecar"), "The string \"racecar\" should contain the following number of a's, b's, or c's: 4");
-        assertEquals(11, MyMain.countABC("amanaplanacanalpanama"), "The string \"amanaplanacanalpanama\" should contain the following number of a's, b's, or c's: 11");
+    public void testBabylonian() {
+        assertEquals(Math.sqrt(100), MyMain.babylonian(100), 0.01, "The square root of 100 should be: " + Math.sqrt(100));
+        assertEquals(Math.sqrt(50.5), MyMain.babylonian(50.5), 0.01, "The square root of 50.5 should be: " + Math.sqrt(50.5));
+        assertEquals(Math.sqrt(20.4), MyMain.babylonian(20.4), 0.01, "The square root of 20.4 should be: " + Math.sqrt(20.4));
+        assertEquals(Math.sqrt(5.2), MyMain.babylonian(5.2), 0.01, "The square root of 5.2 should be: " + Math.sqrt(5.2));
+        assertEquals(Math.sqrt(1192), MyMain.babylonian(1192), 0.01, "The square root of 1192 should be: " + Math.sqrt(1992));
+        assertEquals(Math.sqrt(17), MyMain.babylonian(17), 0.01, "The square root of 17 should be: " + Math.sqrt(17));
     }
 
     @Test
-    public void testContainsThe() {
-        assertEquals(false, MyMain.containsThe("aaa"), "Whether the string \"aaa\" contains \"the\" should return: false");
-        assertEquals(true, MyMain.containsThe("athenian"), "Whether the string \"athenian\" contains \"the\" should return: true");
-        assertEquals(true, MyMain.containsThe("the school"), "Whether the string \"the school\" contains \"the\" should return: true");
-        assertEquals(true, MyMain.containsThe("The pineapple"), "Whether the string \"The pineapple\" contains \"the\" should return: true");
-        assertEquals(false, MyMain.containsThe("racecar"), "Whether the string \"racecar\" contains \"the\" should return: false");
-        assertEquals(false, MyMain.containsThe("xyz"), "Whether the string \"xyz\" contains \"the\" should return: false");
-        assertEquals(false, MyMain.containsThe("amanaplanacanalpanama"), "Whether the string \"amanaplanacanalpanama\" contains \"the\" should return: false");
-    
+    public void testFactorial() {
+        assertEquals(120.0, MyMain.factorial(5), 0.01, "The factorial of 5 should be: 120.0");
+        assertEquals(3628800.0, MyMain.factorial(10), 0.01, "The factorial of 10 should be: 3628800.0");
+        assertEquals(1.0, MyMain.factorial(1), 0.01, "The factorial of 1 should be: 1.0");
+        assertEquals(1.0, MyMain.factorial(0), 0.01, "The factorial of 0 should be: 1.0");
     }
 
     @Test
-    public void testIsPalindrome() {
-        assertEquals(true, MyMain.isPalindrome("aaa"), "Whether the string \"aaa\" is a palindrome should return: true");
-        assertEquals(true, MyMain.isPalindrome("abba"), "Whether the string \"abba\" is a palindrome should return: true");
-        assertEquals(true, MyMain.isPalindrome("abccba"), "Whether the string \"abccba\" is a palindrome should return: true");
-        assertEquals(false, MyMain.isPalindrome("xyz"), "Whether the string \"xyz\" is a palindrome should return: false");
-        assertEquals(false, MyMain.isPalindrome("athenian"), "Whether the string \"athenian\" is a palindrome should return: false");
-        assertEquals(true, MyMain.isPalindrome("racecar"), "Whether the string \"racecar\" is a palindrome should return: true");
-        assertEquals(true, MyMain.isPalindrome("amanaplanacanalpanama"), "Whether the string \"amanaplanacanalpanama\" is a palindrome should return: true");
+    public void testE() {
+        assertEquals(Math.E, MyMain.calculateE(), 0.01, "The value of e should be: " + Math.E);
     }
 
 

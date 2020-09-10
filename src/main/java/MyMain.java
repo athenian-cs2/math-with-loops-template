@@ -2,22 +2,24 @@ import java.util.Scanner;
 
 public class MyMain {
     
-    // Counts the number of 'a', 'b', and 'c' chars in str
-    public static int countABC(String str) {
-        // REPLACE WITH YOUR CODE
+    // Calculates the square root iteratively, using the Babylonian method
+    public static double babylonian(double x) {
+        // REPLACE WITH YOUR CODE HERE
         return -1;
     }
 
-    // Checks to see whether or not str contains 'The' or 'the'
-    public static boolean containsThe(String str) {
-        // REPLACE WITH YOUR CODE
-        return false;
+    // Calculates the factorial of a number
+    public static double factorial(int x) {
+        // REPLACE WITH YOUR CODE HERE
+        return -1;
     }
 
-    // Checks whether str is a palindrome or not
-    public static boolean isPalindrome(String str) {
-        // REPLACE WITH YOUR CODEE
-        return false;
+    // Calculates the value for the math constant e iteratively
+    // goes until it calculates an answer less than 0.00000000001 
+    // different from the value Math.E
+    public static double calculateE() {
+        // REPLACE WITH YOUR CODE HERE
+        return -1;
     }
     
     

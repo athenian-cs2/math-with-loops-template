@@ -1,24 +1,29 @@
-# String Checker Assignment
+# Iterative Math Methods Assignment
 
-In this assignment, you'll be writing three methods to carry out some String operations. Using the Java String methods will be very helpful.
+In this assignment, you'll be writing three methods to calculate some math methods iteratively (using loops).
 
-The first method is countABC(). This method takes a String as input, and returns the total number of 'a', 'b', or 'c' chars. The method has the following signature: public static int countABC(String str) {}
+The first method is babylonian(). This method takes a double as input, and returns the squareroot of that number. However, you are NOT allowed to use the Math.sqrt() method. Instead, you will use the Babylonian method to calculate the square root "by hand". Here is a description of the Babylonian Method:
+0. Let's assume that x is the inputted double
+1. Start with a guess, n. n can be any positive number. 
+2. Use the following formula to get a better guess: m = (n + x/n) / 2 
+3. As m is a better guess than n, update the value of your guess (set n = m)
+4. Repeat steps 1-3 until the difference between your current n value and your previous n value is less than 0.00001
+5. At this point, n will be a very close approximation of the squareroot.
 
-The second method is containsThe(). This method takes a String as input, and returns a boolean equal to whether or not the String contains "the" or "The". The method has the following signature: public static boolean containsThe(String str) {}
+The method has the following signature: public static double babylonian(double x) {}
 
-The final method is isPalindrome(). This method takes a String as input, and returns a boolean equal to whether or not the String is a palindrome (a palindrome is a word that is the same forwards and backwards, like "racecar"). The method has the following signature: public static boolean isPalindrome(String str) {}
+The second method is factorial(). This method takes an integer as input, and returns the factorial of that number. The factorial of a number x is found by multiplying x by all integers smaller than x. For example, the factorial of 5 is equal to: factorial(5) = 5 * 4 * 3 * 2 * 1. Note that factorial(0) is defined to be 0. The method has the following signature: public static double factorial(int x) {}
 
-After writing the three methods and testing that they work, use Scanner in your main code to ask the user to type in a String. Then, run all three methods on that String and print out some messages depending on that result. 
+The final method is calculateE(). This method takes no inputs, and returns a value for the mathematical constant e that is calculated with the following formula: e = 1/factorial(0) + 1/factorial(1) + 1/factorial(2) + 1/factorial(3) + ... + 1/factorial(infinity). You will not need to calculate the formula up to the infinity-th term, rather, you should keep adding additional terms until you end up with a value within 0.00001 of the Java Math constant Math.E. The method has the following signature: public static double calculateE() {}
 
-In addition, you might want to use the scan.nextLine() method instead of scan.next(). Whereas scan.next() only reads in the next String that they type, scan.nextLine() reads in the entire line of text they entered. 
+After writing the three methods and testing that they work, add some code to your main method to test the methods. You should use Scanner in your main code to ask the user to type in a Double, and then calculate the squareroot of the value using the babylonian() method. Then, you should also run your calculateE() method.
 
 Example of what your program may look like when it is being run:
 ```shell script
-Please enter a string: 
-the athenian school
-Your string contains 3 a's, b's, or c's
-Your string DOES contain the
-Your string IS NOT a palindrome
+Enter a positive number!
+125
+The squareroot of 125.0 is 11.18033988749989
+The value of e is roughly : 2.71828182845823
 ```
 
 <br />
