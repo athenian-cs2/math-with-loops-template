@@ -27,5 +27,10 @@ public class MyMain {
         Scanner scan = new Scanner(System.in);
 
         // YOUR CODE HERE
+
+
+        
+
+        scan.close();
     }
 }
