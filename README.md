@@ -12,7 +12,7 @@ The first method is babylonian(). This method takes a double as input, and retur
 
 The method has the following signature: public static double babylonian(double x) {}
 
-The second method is factorial(). This method takes an integer as input, and returns the factorial of that number. The factorial of a number x is found by multiplying x by all integers smaller than x. For example, the factorial of 5 is equal to: factorial(5) = 5 * 4 * 3 * 2 * 1. Note that factorial(0) is defined to be 0. The method has the following signature: public static double factorial(int x) {}
+The second method is factorial(). This method takes an integer as input, and returns the factorial of that number. The factorial of a number x is found by multiplying x by all integers smaller than x. For example, the factorial of 5 is equal to: factorial(5) = 5 * 4 * 3 * 2 * 1. Note that factorial(0) is defined to be 1. The method has the following signature: public static double factorial(int x) {}
 
 The final method is calculateE(). This method takes no inputs, and returns a value for the mathematical constant e that is calculated with the following formula: e = 1/factorial(0) + 1/factorial(1) + 1/factorial(2) + 1/factorial(3) + ... + 1/factorial(infinity). You will not need to calculate the formula up to the infinity-th term, rather, you should keep adding additional terms until you end up with a value within 0.00001 of the Java Math constant Math.E. The method has the following signature: public static double calculateE() {}
 
