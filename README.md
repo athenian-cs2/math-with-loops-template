@@ -12,7 +12,7 @@ The final method is babylonian(). This method takes a double as input, and retur
 2. Start with a guess, n. n can be any positive number. 
 3. Use the following formula to get a better guess: m = (n + x/n) / 2 
 4. As m is a better guess than n, update the value of your guess (set n = m)
-5. Repeat steps 1-3 until the difference between your current n value and your previous n value is less than 0.00001
+5. Repeat steps 1-4 (with a loop) until the difference between your current n value and your previous n value is less than 0.00001
 6. At this point, n will be a very close approximation of the squareroot.
 
 The method has the following signature: public static double babylonian(double x) {}
