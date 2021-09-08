@@ -1,17 +1,11 @@
 import java.util.Scanner;
 
 public class MyMain {
-    
-    // Calculates the square root iteratively, using the Babylonian method
-    public static double babylonian(double x) {
-        // REPLACE WITH YOUR CODE HERE
-        return -1;
-    }
 
     // Calculates the factorial of a number
     public static double factorial(int x) {
         // REPLACE WITH YOUR CODE HERE
-        return -1;
+        return -1.0;
     }
 
     // Calculates the value for the math constant e iteratively
@@ -19,7 +13,13 @@ public class MyMain {
     // different from the value Math.E
     public static double calculateE() {
         // REPLACE WITH YOUR CODE HERE
-        return -1;
+        return -1.0;
+    }
+
+    // Calculates the square root iteratively, using the Babylonian method
+    public static double babylonian(double x) {
+        // REPLACE WITH YOUR CODE HERE
+        return -1.0;
     }
     
     
