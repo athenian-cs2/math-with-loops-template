@@ -3,12 +3,13 @@
 In this assignment, you'll be writing three methods to calculate some math methods iteratively (using loops).
 
 The first method is babylonian(). This method takes a double as input, and returns the squareroot of that number. However, you are NOT allowed to use the Math.sqrt() method. Instead, you will use the Babylonian method to calculate the square root "by hand". Here is a description of the Babylonian Method:
-0. Let's assume that x is the inputted double
-1. Start with a guess, n. n can be any positive number. 
-2. Use the following formula to get a better guess: m = (n + x/n) / 2 
-3. As m is a better guess than n, update the value of your guess (set n = m)
-4. Repeat steps 1-3 until the difference between your current n value and your previous n value is less than 0.00001
-5. At this point, n will be a very close approximation of the squareroot.
+
+1. Let's assume that x is the inputted double
+2. Start with a guess, n. n can be any positive number. 
+3. Use the following formula to get a better guess: m = (n + x/n) / 2 
+4. As m is a better guess than n, update the value of your guess (set n = m)
+5. Repeat steps 1-3 until the difference between your current n value and your previous n value is less than 0.00001
+6. At this point, n will be a very close approximation of the squareroot.
 
 The method has the following signature: public static double babylonian(double x) {}
 
